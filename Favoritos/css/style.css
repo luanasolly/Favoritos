@@ -1,0 +1,151 @@
+:root {
+  --cor-de-fundo: #F6E7D8;
+  --cor-menu: #990000;
+  --fonte-principal: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: var(--cor-de-fundo);
+}
+
+.navegação {
+  background-color: var(--cor-menu);
+  width: 100%;
+  height: 220px;
+  font-size: 40px;
+  color: aliceblue;
+}
+
+.navegação_container {
+  display: flex;
+  padding: .3em 3em;
+}
+
+.navegação_container {
+  display: flex;
+  justify-content: center;
+}
+
+.carrossel__titulo {
+  color: var(--cor-menu);
+  font-family: var(--fonte-principal);
+  background-color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 20px;
+  padding: 1.2em;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
+}
+
+.swiper-pagination {
+  position: initial;
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin-top: 10px;
+}
+
+.swiper-wrapper img {
+  width: 100%;
+}
+
+.rodapé {
+  background-color: var(--cor-menu);
+  margin-top: 20px;
+  height: 60px;
+}
+
+.rodapé p {
+  padding: 20px 50px;
+  font-family: var(--fonte-principal);
+}
+
+.filmes {
+  display: none;
+}
+
+.navegação_menu {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+
+}
+
+@media screen and (min-width: 1728px) {  
+  .navegação {
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navegação_container {
+    display: block;
+    padding-left: 300px;
+  }
+
+  .navegação_container img {
+    width: 140px;
+  }
+
+  .navegação_menu {
+    font-family: var(--fonte-principal);
+    display: block;
+    font-size: 25px;
+    align-self: center;
+    padding-right: 200px;
+  }
+
+  .navegação_menu a {
+    text-decoration: none;
+    color: white;
+    padding-left: 30px;
+  }
+
+  .carrossel {
+    display: none;
+  }
+
+  .filmes img {
+    width: 220px;
+  }
+
+  .filmes {
+    display: block;
+    margin: 32px 20px;
+  }
+  
+  .filmes_linha1 {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .filmes_linha2 {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+  }
+  
+  .filmes img:hover {
+    -xpedu-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1.1);
+  }
+
+  .rodapé {
+    height: 55px;
+  }
+}
